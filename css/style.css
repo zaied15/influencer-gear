@@ -27,10 +27,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.logo h1 {
+.logo h2 {
   margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
 }
-.logo h1 a {
+.logo h2 a {
   text-decoration: none;
   color: #3a3a3a;
 }
@@ -59,6 +62,58 @@ body {
   border-radius: 10px;
   color: #fff;
   transition: all 0.8s ease;
+}
+
+/* -----------------------
+    Welcome Area CSS Style
+-------------------------- */
+.welcome-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.welcome-text-area {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.welcome-text h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+}
+.welcome-text p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background: #e02c6d;
+  border-radius: 41px;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn:hover {
+  padding: 12px 30px;
+  transition: all 0.5s linear;
+}
+.welcome-img {
+  background: url(../images/resources/Circle-design.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50%;
+  text-align: center;
+}
+.welcome-area:hover .welcome-img img {
+  transform: rotate3d(2, -1, -1, -0.85turn);
+  transition: all 2s ease;
 }
 /* -----------------------
     Responsive CSS Style 
