@@ -227,7 +227,6 @@ body {
   text-transform: uppercase;
 }
 .subscribe-title span {
-  /* background: #fff296; */
   background: rgba(224, 44, 109, 0.87);
   display: inline-block;
   padding: 15px 10px;
@@ -244,6 +243,7 @@ body {
 .subscribe-form {
   width: 70%;
   position: relative;
+  margin-bottom: 20px;
 }
 .subscribe-form input {
   width: 100%;
@@ -265,6 +265,7 @@ body {
   font-weight: normal;
   border-radius: 5px;
 }
+
 /* -----------------------
     Footer Area CSS Style 
 -------------------------- */
@@ -346,6 +347,45 @@ body {
   .popular-collections {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
+  }
+  /* Subscribe Newsletter Area Css Style for mobile devices */
+  .subscribe-area {
+    margin: 100px auto 30px auto;
+    width: 80%;
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .subscribe-content {
+    display: block;
+  }
+  .subscribe-text-area {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    border-bottom: 1px solid #181717;
+  }
+  .subscribe-title {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .subscribe-title span {
+    background: rgba(224, 44, 109, 0.87);
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 50%;
+    color: #fff;
+  }
+  .subscribe-form-area {
+    width: 100%;
+  }
+  .subscribe-form-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .subscribe-form {
+    width: 80%;
   }
 }
 
