@@ -205,7 +205,7 @@ body {
   margin: 100px auto 30px auto;
   width: 80%;
   background: #f7f7f7 none repeat scroll 0 0;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
 }
 .subscribe-content {
@@ -230,7 +230,7 @@ body {
 .subscribe-title span {
   background: rgba(224, 44, 109, 0.87);
   display: inline-block;
-  padding: 15px 10px;
+  padding: 25px 10px;
   border-radius: 50%;
   color: #fff;
 }
@@ -303,7 +303,7 @@ body {
     Responsive CSS Style 
 -------------------------- */
 
-/* For devices with width of 480px and less, like phones */
+/* For devices with width of 688px and less, like phones */
 @media only screen and (max-width: 688px) {
   /* Navigation and Welcome area mobile Css Style */
   .main-menu {
@@ -375,7 +375,7 @@ body {
   }
 }
 
-/* For devices with width between 481px and 768px, like larger phones and portrait tablets */
+/* For devices with width between 689px and 992px, like larger phones and portrait tablets */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   /* Navigation Area CSS Style For Tablets */
   .nav-bar {
@@ -450,9 +450,6 @@ body {
   }
   .subscribe-text-area p {
     font-size: 18px;
-  }
-  .subscribe-title span {
-    padding: 15px 10px;
   }
   .subscribe-form-area {
     width: 100%;
