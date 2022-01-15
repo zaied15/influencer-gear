@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.logo h2 {
+.logo-title {
   margin: 0;
   font-weight: bold;
   font-size: 24px;
@@ -99,6 +99,10 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 130px;
 }
 .btn:hover {
   padding: 12px 30px;
@@ -112,9 +116,133 @@ body {
   text-align: center;
 }
 .welcome-area:hover .welcome-img img {
-  transform: rotate3d(2, -1, -1, -0.85turn);
+  transform: rotate3d(2, -1, -1, 0.2turn);
+  /* transform: rotate3d(0, -30, 50, 6rad); */
   transition: all 2s ease;
 }
+
+/* ------------------------------
+    Popular Collection CSS Style 
+--------------------------------- */
+
+.popular-collection-area {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.popular-collection-area h3 {
+  text-align: center;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 70px;
+}
+.popular-collections {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.single-collection {
+  padding: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.single-collection img {
+  width: 100%;
+  border-radius: 5px;
+}
+.single-collection h4 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 10px 0;
+}
+.price {
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+}
+.product-rating {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+.product-rating i {
+  color: orange;
+  margin-right: 5px;
+}
+.product-info {
+  margin: 0;
+}
+.product-info span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.018em;
+}
+.btn-see-more {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(224, 44, 109, 0.87);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+/* --------------------------------
+    Subscribe Newsletter CSS Style 
+----------------------------------- */
+.subscribe-area {
+  margin: 100px auto 50px auto;
+  width: 80%;
+}
+.subscribe-text-area {
+  background: url(../images/resources/subscribe-bg.webp) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.subscribe-text {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  padding-left: 100px;
+}
+.subscribe-text h2 {
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.subscribe-form {
+  position: relative;
+}
+.subscribe-form input {
+  width: 32%;
+  height: 30px;
+  background-color: transparent;
+  padding: 20px 80px 20px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #d0d0d0;
+  border-radius: 50px;
+}
+.subscribe-form button {
+  position: absolute;
+  top: 20px;
+  left: 35%;
+  border: 0;
+  font-size: 1.5em;
+}
+
 /* -----------------------
     Responsive CSS Style 
 -------------------------- */
