@@ -33,7 +33,7 @@ body {
   font-size: 24px;
   line-height: 36px;
 }
-.logo h2 a {
+.logo-title a {
   text-decoration: none;
   color: #3a3a3a;
 }
@@ -116,8 +116,8 @@ body {
   text-align: center;
 }
 .welcome-area:hover .welcome-img img {
-  transform: rotate3d(2, -1, -1, 0.2turn);
-  /* transform: rotate3d(0, -30, 50, 6rad); */
+  /* transform: rotate3d(2, -1, -1, 0.2turn); */
+  transform: rotate3d(0, -30, 50, 6rad);
   transition: all 2s ease;
 }
 
@@ -149,7 +149,7 @@ body {
 .single-collection {
   padding: 10px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .single-collection img {
@@ -201,13 +201,14 @@ body {
     Subscribe Newsletter CSS Style 
 ----------------------------------- */
 .subscribe-area {
-  margin: 100px auto 50px auto;
+  margin: 100px auto 30px auto;
   width: 80%;
 }
 .subscribe-text-area {
   background: url(../images/resources/subscribe-bg.webp) no-repeat;
   background-size: cover;
   width: 100%;
+  border-radius: 5px;
 }
 .subscribe-text {
   display: flex;
@@ -241,6 +242,35 @@ body {
   left: 35%;
   border: 0;
   font-size: 1.5em;
+}
+
+/* -----------------------
+    Footer Area CSS Style 
+-------------------------- */
+
+.footer-text {
+  background: #0a0826;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0px;
+}
+.footer-text p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
+  margin-bottom: 30px;
+}
+.social-icons i {
+  width: 32px;
+  height: 32px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* -----------------------
