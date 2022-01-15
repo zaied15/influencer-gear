@@ -71,9 +71,9 @@ body {
 .welcome-area {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 100px;
 }
+
 .welcome-text-area {
   display: flex;
   align-items: center;
@@ -224,6 +224,7 @@ body {
 .subscribe-title {
   font-size: 30px;
   line-height: 25px;
+  margin: 0;
   text-transform: uppercase;
 }
 .subscribe-title span {
@@ -235,6 +236,9 @@ body {
 }
 .subscribe-form-area {
   width: 40%;
+}
+.subscribe-form-area small {
+  padding-right: 50px;
 }
 .subscribe-form-title {
   font-size: 20px;
@@ -309,7 +313,6 @@ body {
     justify-content: center;
   }
   .welcome-area {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -321,7 +324,6 @@ body {
     order: 2;
   }
   .welcome-text h1 {
-    font-weight: bold;
     font-size: 28px;
     line-height: 42px;
   }
@@ -348,16 +350,13 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
   }
+
   /* Subscribe Newsletter Area Css Style for mobile devices */
-  .subscribe-area {
-    margin: 100px auto 30px auto;
-    width: 80%;
-    background: #f7f7f7 none repeat scroll 0 0;
-    border-radius: 10px;
-    padding: 10px;
-  }
+
   .subscribe-content {
     display: block;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .subscribe-text-area {
     display: block;
@@ -365,24 +364,11 @@ body {
     padding-left: 0;
     border-bottom: 1px solid #181717;
   }
-  .subscribe-title {
-    font-size: 20px;
-    line-height: 25px;
-    text-transform: uppercase;
-  }
-  .subscribe-title span {
-    background: rgba(224, 44, 109, 0.87);
-    display: inline-block;
-    padding: 15px 10px;
-    border-radius: 50%;
-    color: #fff;
-  }
   .subscribe-form-area {
     width: 100%;
   }
   .subscribe-form-title {
     font-size: 20px;
-    font-weight: 600;
   }
   .subscribe-form {
     width: 80%;
@@ -417,11 +403,11 @@ body {
 
   /* Welcome Area CSS Style For Tablets */
   .welcome-area {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .welcome-text-area {
     display: block;
     width: 100%;
@@ -429,7 +415,6 @@ body {
     order: 2;
   }
   .welcome-text h1 {
-    font-weight: bold;
     font-size: 35px;
     line-height: 42px;
   }
@@ -449,12 +434,33 @@ body {
   .popular-collections {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-/* For devices with width between 769px and 1279px, like landscape tablets and laptops */
-@media only screen and (min-width: 993px) and (max-width: 1577px) {
-}
+  /* Subscribe Newsletter Area Css Style for tablet devices */
 
-/* For devices with width of 1280px and more, like desktop computers */
-@media only screen and (min-width: 1280px) {
+  .subscribe-content {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subscribe-text-area {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    border-bottom: 1px solid #181717;
+  }
+  .subscribe-text-area p {
+    font-size: 18px;
+  }
+  .subscribe-title span {
+    padding: 15px 10px;
+  }
+  .subscribe-form-area {
+    width: 100%;
+  }
+  .subscribe-form-title {
+    font-size: 25px;
+  }
+  .subscribe-form {
+    width: 80%;
+  }
 }
