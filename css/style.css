@@ -204,52 +204,67 @@ body {
 .subscribe-area {
   margin: 100px auto 30px auto;
   width: 80%;
+  background: #f7f7f7 none repeat scroll 0 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.subscribe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
 }
 .subscribe-text-area {
-  background: url(../images/resources/subscribe-bg.webp) no-repeat;
-  background-size: contain;
-  width: 100%;
-  border-radius: 5px;
-}
-.subscribe-text {
   display: flex;
-  flex-direction: column;
-  height: 400px;
   justify-content: center;
+  align-items: center;
+  width: 40%;
   padding-left: 100px;
 }
 .subscribe-title {
-  font-size: 40px;
-  line-height: 60px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 25px;
   text-transform: uppercase;
 }
 .subscribe-title span {
-  font-size: 30px;
-  font-weight: normal;
+  /* background: #fff296; */
+  background: rgba(224, 44, 109, 0.87);
+  display: inline-block;
+  padding: 15px 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+.subscribe-form-area {
+  width: 40%;
+}
+.subscribe-form-title {
+  font-size: 20px;
+  font-weight: 600;
 }
 .subscribe-form {
+  width: 70%;
   position: relative;
 }
 .subscribe-form input {
-  width: 32%;
-  height: 30px;
-  background-color: transparent;
-  padding: 20px 80px 20px 20px;
-  font-size: 16px;
-  line-height: 24px;
-  border: 1px solid #d0d0d0;
-  border-radius: 50px;
+  width: 100%;
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px 5px 20px 10px;
+  color: #333333;
 }
 .subscribe-form button {
   position: absolute;
-  top: 20px;
-  left: 35%;
+  top: 10px;
+  right: 0;
+  background: rgba(224, 44, 109, 0.87);
   border: 0;
-  font-size: 1.5em;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 5px;
 }
-
 /* -----------------------
     Footer Area CSS Style 
 -------------------------- */
@@ -332,42 +347,6 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
   }
-
-  /* Subscriber Area Mobile Css Style */
-  .subscribe-area {
-    margin-top: 50px;
-  }
-  .subscribe-text-area {
-    background: #ecedea;
-  }
-  .subscribe-text {
-    padding-left: 0;
-    height: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .subscribe-title {
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .subscribe-title span {
-    font-size: 14px;
-  }
-  .subscribe-form input {
-    padding: 15px 80px 15px 15px;
-    font-size: 14px;
-  }
-  .subscribe-form button {
-    position: absolute;
-    top: 20px;
-    left: 66%;
-    border: 0;
-    font-size: 1em;
-  }
 }
 
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
@@ -430,46 +409,10 @@ body {
   .popular-collections {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* Subscriber Area Css Style For Tablets */
-  .subscribe-area {
-    margin-top: 50px;
-  }
-  .subscribe-text-area {
-    background: #ecedea;
-  }
-  .subscribe-text {
-    padding-left: 0;
-    height: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .subscribe-title {
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .subscribe-title span {
-    font-size: 14px;
-  }
-  .subscribe-form input {
-    padding: 15px 80px 15px 15px;
-    font-size: 14px;
-  }
-  .subscribe-form button {
-    position: absolute;
-    top: 20px;
-    left: 66%;
-    border: 0;
-    font-size: 1em;
-  }
 }
 
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 993px) and (max-width: 1577px) {
 }
 
 /* For devices with width of 1280px and more, like desktop computers */
