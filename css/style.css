@@ -22,6 +22,7 @@ body {
 .header-area {
   margin-top: 60px;
 }
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -206,7 +207,7 @@ body {
 }
 .subscribe-text-area {
   background: url(../images/resources/subscribe-bg.webp) no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   border-radius: 5px;
 }
@@ -217,11 +218,16 @@ body {
   justify-content: center;
   padding-left: 100px;
 }
-.subscribe-text h2 {
+.subscribe-title {
   font-size: 40px;
   line-height: 60px;
   margin-top: 0;
   margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.subscribe-title span {
+  font-size: 30px;
+  font-weight: normal;
 }
 .subscribe-form {
   position: relative;
@@ -278,15 +284,192 @@ body {
 -------------------------- */
 
 /* For devices with width of 480px and less, like phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 688px) {
+  /* Navigation and Welcome area mobile Css Style */
+  .main-menu {
+    display: none;
+  }
+  .nav-bar {
+    justify-content: center;
+  }
+  .welcome-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-text-area {
+    display: block;
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  .welcome-text h1 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .btn {
+    display: inline-block;
+    width: 150px;
+  }
+  .welcome-img {
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .welcome-img img {
+    width: 100%;
+  }
+
+  /* Popular collection Area mobile Css Style */
+  .popular-collection-area h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .popular-collections {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0px;
+  }
+
+  /* Subscriber Area Mobile Css Style */
+  .subscribe-area {
+    margin-top: 50px;
+  }
+  .subscribe-text-area {
+    background: #ecedea;
+  }
+  .subscribe-text {
+    padding-left: 0;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .subscribe-title {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .subscribe-title span {
+    font-size: 14px;
+  }
+  .subscribe-form input {
+    padding: 15px 80px 15px 15px;
+    font-size: 14px;
+  }
+  .subscribe-form button {
+    position: absolute;
+    top: 20px;
+    left: 66%;
+    border: 0;
+    font-size: 1em;
+  }
 }
 
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  /* Navigation Area CSS Style For Tablets */
+  .nav-bar {
+    display: block;
+  }
+  .logo-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .logo-title a {
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+  .menus li {
+    margin-right: 15px;
+  }
+  .menus li:last-child {
+    margin-right: 0;
+  }
+  .menus li a:first-child {
+    padding-left: 0;
+  }
+
+  /* Welcome Area CSS Style For Tablets */
+  .welcome-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-text-area {
+    display: block;
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  .welcome-text h1 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .btn {
+    display: inline-block;
+    width: 150px;
+  }
+  .welcome-img {
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .welcome-img img {
+    width: 100%;
+  }
+  /* Popular Collection Tablets Css Style */
+  .popular-collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Subscriber Area Css Style For Tablets */
+  .subscribe-area {
+    margin-top: 50px;
+  }
+  .subscribe-text-area {
+    background: #ecedea;
+  }
+  .subscribe-text {
+    padding-left: 0;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .subscribe-title {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .subscribe-title span {
+    font-size: 14px;
+  }
+  .subscribe-form input {
+    padding: 15px 80px 15px 15px;
+    font-size: 14px;
+  }
+  .subscribe-form button {
+    position: absolute;
+    top: 20px;
+    left: 66%;
+    border: 0;
+    font-size: 1em;
+  }
 }
 
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 992px) {
 }
 
 /* For devices with width of 1280px and more, like desktop computers */
